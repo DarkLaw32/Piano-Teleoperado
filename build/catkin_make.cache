@@ -1,0 +1,2 @@
+notas
+-DCATKIN_DEVEL_PREFIX=/home/pi/ros/ProyectoPiano/devel -DCMAKE_INSTALL_PREFIX=/home/pi/ros/ProyectoPiano/install -G Unix Makefiles

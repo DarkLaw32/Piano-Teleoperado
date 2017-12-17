@@ -1,0 +1,8 @@
+prefix=/home/pi/ros/ProyectoPiano/install
+
+Name: notas
+Description: Description of notas
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/ros/ProyectoPiano/install/lib 
+Requires: 
