@@ -1,7 +1,4 @@
 # Teleoperated Piano
-This project was made for the subject of Robotics at the Bolivian Catholic University "San Pablo" by the university students:
-Alan Wilfor Ibanez Illanes
-Xavier Alexis Murillo Sanchez
-Jorge Armando Quiroz Perez.
+This project was made for the subject of Robotics at the Bolivian Catholic University "San Pablo" by the university students:Alan Wilfor Ibanez Illanes, Xavier Alexis Murillo Sanchez and Jorge Armando Quiroz Perez.
 The project that was carried out during the whole semester is the development of an actuator controlled by ROS that touches a natural scale of the organ, to achieve the development of this project a publishing node was used that sends the notes that are wanted to touch and a subscriber node to receive the instructions and generate the activation of the corresponding electromagnets. This project arises from the need to teach people with interest to learn to play the organ, being a prototype of organ learning assistant implementing the use of ROS for its operation.
 Up to the date of creation of this document it has been possible to develop all the mechanical part of the learning assistant prototype, in addition, ROS was implemented for the communication between the operator and the actuators, allowing the operator to send a series of instructions making certain specific actions such as playing an individual note or also develop a certain sequence of notes, additionally tests were made for reading text files containing instructions for the reproduction of specific sequences in the organ, thus avoiding to record in the program code each new sequence that you want to try. Then leave the link to the video demonstration of the project: LINK TO THE VIDEO
