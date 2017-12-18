@@ -1,0 +1,112 @@
+int DO = 12;
+int RE = 11;
+int MI = 10;
+int FA = 5;
+int SOL = 8;
+int LA = 7;
+int SI = 6;
+
+int input,num;
+
+void setup() {                
+  // initialize the digital pin as an output.
+  pinMode(DO, OUTPUT);   
+  pinMode(RE, OUTPUT);   
+  pinMode(MI, OUTPUT);   
+  pinMode(FA, OUTPUT);   
+  pinMode(SOL, OUTPUT);   
+  pinMode(LA, OUTPUT);   
+  pinMode(SI, OUTPUT);
+  
+  Serial.begin(9600);  
+}
+
+void loop() 
+{
+  if(Serial.available()>0)
+  {
+    input=Serial.read();
+    Serial.println(input);
+    if(input==57)  //DO
+    {
+      digitalWrite(DO, HIGH);   
+      delay(700);               
+      digitalWrite(DO, LOW);    
+      //delay(300); 
+    }
+    if(input==56) //RE
+    {
+      digitalWrite(RE, HIGH);   
+      delay(700);               
+      digitalWrite(RE, LOW);  
+      //delay(300);
+    }
+    if(input==55) //MI
+    {
+      digitalWrite(MI, HIGH);   
+      delay(700);               
+      digitalWrite(MI, LOW);  
+      //delay(300);
+    }
+    if(input==54) //FA
+    {
+      digitalWrite(FA, HIGH);   
+      delay(700);               
+      digitalWrite(FA, LOW);  
+      //delay(300);
+    }
+    if(input==53) //SOL
+    {
+      digitalWrite(SOL, HIGH);   
+      delay(700);               
+      digitalWrite(SOL, LOW);  
+      //delay(300);
+    }
+    if(input==52) //LA
+    {
+      digitalWrite(LA, HIGH);   
+      delay(700);               
+      digitalWrite(LA, LOW);  
+      //delay(300);
+    }
+    if(input==51) //SI
+    {
+      digitalWrite(SI, HIGH);   
+      delay(700);               
+      digitalWrite(SI, LOW);  
+      //delay(300);
+    }  
+    if(input==50)
+    {
+       CANCION();
+      } 
+   }
+}
+
+void CANCION()
+{
+    digitalWrite(SOL, HIGH);   
+      delay(350);               
+    digitalWrite(SOL, LOW);
+       delay(350);  
+    digitalWrite(SOL, HIGH);   
+      delay(350);               
+    digitalWrite(SOL, LOW);  
+         delay(350);
+    digitalWrite(SOL, HIGH);   
+      delay(350);               
+    digitalWrite(SOL, LOW);
+     delay(350); 
+    digitalWrite(MI, HIGH);
+      delay(200);
+    digitalWrite(MI, LOW); 
+         delay(200);
+    digitalWrite(LA, HIGH);
+      delay(300);
+    digitalWrite(LA, LOW); 
+         delay(300);    
+    digitalWrite(SOL, HIGH);  
+      delay(600);               
+    digitalWrite(SOL, LOW);    
+         delay(600);
+}
